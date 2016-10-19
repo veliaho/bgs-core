@@ -390,7 +390,7 @@ public abstract class BackgroundService extends Service {
         this.handleLastResult(tmp);
     }
 
-    protected void handleLastResult(JSONObject result);
+    protected void handleLastResult(JSONObject result) {
         Log.i(TAG, "Syncing result");
         setLatestResult(result);
 
