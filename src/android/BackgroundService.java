@@ -387,10 +387,10 @@ public abstract class BackgroundService extends Service {
             Log.i(TAG, "Exception occurred during doWork()", ex);
         }
 
-        this.doLastResult(tmp);
+        this.handleLastResult(tmp);
     }
 
-    protected void doLastResult(result);
+    protected void handleLastResult(JSONObject result);
         Log.i(TAG, "Syncing result");
         setLatestResult(result);
 
